@@ -3,4 +3,4 @@ We simulate the SIRS model of epidemic spread to try and explain the trajectorie
 Parameters that can be played around with:
 
  
-$`R_0`$ - the average number of people that an infected person passes on the disease to
+`$R_0$` - the average number of people that an infected person passes on the disease to
