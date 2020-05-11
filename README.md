@@ -1,5 +1,6 @@
 # pandem-onion
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shivChitinous/optimal_forager/blob/master/Optimal%20Foraging%20Theory.ipynb#scrollTo=mzQSlPyPiF76)
 
 __Visualising SIRS Model of Epidemic Spread__
 
