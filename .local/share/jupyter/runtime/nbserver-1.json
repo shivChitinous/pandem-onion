@@ -1,11 +1,11 @@
 {
-  "base_url": "/binder/jupyter/user/shivchitinous-pandem-onion-5yulb081/",
+  "base_url": "/binder/jupyter/user/shivchitinous-pandem-onion-40gvi0j9/",
   "hostname": "0.0.0.0",
   "notebook_dir": "/home/jovyan",
   "password": false,
   "pid": 1,
   "port": 8888,
   "secure": false,
-  "token": "yLrXb-JrTomSIQ8pE8dM5Q",
-  "url": "http://0.0.0.0:8888/binder/jupyter/user/shivchitinous-pandem-onion-5yulb081/"
+  "token": "0hkoho94SAK_h_n-8fwQig",
+  "url": "http://0.0.0.0:8888/binder/jupyter/user/shivchitinous-pandem-onion-40gvi0j9/"
 }

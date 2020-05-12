@@ -19,8 +19,8 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 150%;
-  -webkit-text-size-adjust: 150%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -13104,6 +13104,14 @@ div#notebook {
 
 
 
+  <div class="cell text_cell">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://shivchitinous.github.io/pandem-onion/"><em>Home</em></a> | <a href="https://github.com/shivChitinous/pandem-onion"><em>Git</em></a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master"><em>Binder</em></a></p>
@@ -13341,12 +13349,9 @@ A trivial conservation law $N = S + I + R$ holds.</p>
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p>The first obervable - <strong>Number of Infected Persons</strong>, is a useful way to see the maximum load on the healthcare system. The flatter the curve, the lower the maximum load during an epidemic. If the curve is flattened and elongated, we should expect minimum deaths due to the disease. In the news cycle, this observable is often called <strong><em>Number of Active Cases</em></strong>.</p>
+<p><strong>1.</strong> The first obervable - <strong>Number of Infected Persons</strong>, is a useful way to see the maximum load on the healthcare system. The flatter the curve, the lower the maximum load during an epidemic. If the curve is flattened and elongated, we should expect minimum deaths due to the disease. In the news cycle, this observable is often called <strong><em>Number of Active Cases</em></strong>.</p>
 <p>If this observable peaks in an <strong>uncontrolled</strong> system, the population has acquired herd immunity. This is because after a certain number of people have fallen sick and recovered, there are fewer susceptible people left to infect.</p>
 <p>Note that <strong>the area under this curve is NOT equal to the cumulative number of cases</strong> since the epidemic began. This is because once someone falls sick, they take a certain number of days to recover and hence, if we add up the number of infected people everyday, we will end up double counting many patients.</p>
-</li>
-</ol>
 
 </div>
 </div>
@@ -13403,12 +13408,9 @@ A trivial conservation law $N = S + I + R$ holds.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The trajectory of the rates of infection and removal add up to give us the net rate of change in $I$.</p>
-<ol>
-<li><p><strong>Daily New Cases</strong> tell us if any interventions have been useful. This is the observable to watch when it comes to policy-making. Effective policy should aim to flatten this curve.</p>
+<p><strong>2.</strong> <strong>Daily New Cases</strong> tell us if any interventions have been useful. This is the observable to watch when it comes to policy-making. Effective policy should aim to flatten this curve.</p>
 <p>The peak in number of infected cases is achieved when $dI/dt = 0$. Notably, this is <strong>NOT</strong> the same as saying that the number of daily new cases has gone to 0. Therefore, once herd immunity is acquired, cases will <em>continue</em> to grow. This is known as 'overshoot'. This will be clearer when we look at the next observable.</p>
 <p>The endgame is pushing this curve to 0.</p>
-</li>
-</ol>
 
 </div>
 </div>
@@ -13501,11 +13503,8 @@ A trivial conservation law $N = S + I + R$ holds.</p>
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p>The third main observable: <strong>cumulative infections over time</strong>. This is found by integrating over daily new cases, i.e. by calculating the area under the <em>daily-new-cases</em> curve. Plotting on a log scale tells us which phase of growth the system is in.</p>
+<p><strong>3.</strong> The third main observable: <strong>cumulative infections over time</strong>. This is found by integrating over daily new cases, i.e. by calculating the area under the <em>daily-new-cases</em> curve. Plotting on a log scale tells us which phase of growth the system is in.</p>
 <p>Note here that the threshold number of cases required for acquiring herd immunity is lower than the total cumulative number of cases as $t \rightarrow \infty$. This is exactly what we mean by "overshoot"!</p>
-</li>
-</ol>
 
 </div>
 </div>
