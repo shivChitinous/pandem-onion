@@ -1,11 +1,10 @@
 # pandem-onion
 
-[:octocat:](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
+
+[![Generic badge](https://img.shields.io/badge/View in-GitHub-red.svg)](https://github.com/shivChitinous/pandem-onion)
+
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
-
-{: style="text-align: right" }
-This text is on the right
 
 __Visualising SIRS Model of Epidemic Spread__
 
