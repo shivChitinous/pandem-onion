@@ -3,7 +3,7 @@
 
 __Visualising SIRS Model of Epidemic Spread__
 
-[Check out artice here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)
+[Check out model here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)
 
 I simulate the SIRS model of epidemic spread to try and explain the trajectories of different variables as the disease progresses in a population.
 
