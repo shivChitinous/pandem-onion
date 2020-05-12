@@ -9,4 +9,4 @@ Parameters that can be played around with:
 
 R<sub>0</sub> - the average number of people that an infected person passes on the disease to.
 
-[Check out artice here!](shivchitinous.github.io/nbinteract-tutorial/tutorial.html)
+[Check out artice here!](shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)
