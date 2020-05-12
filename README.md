@@ -1,8 +1,7 @@
 # pandem-onion
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
 [![Generic badge](https://img.shields.io/badge/launch-GitHub-Red.svg)](https://github.com/shivChitinous/pandem-onion)
-[![Website shields.io](https://img.shields.io/open-GitHub-red/http/shields.io.svg)](https://github.com/shivChitinous/pandem-onion)
-__Visualising SIRS Model of Epidemic Spread__
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)__Visualising SIRS Model of Epidemic Spread__
 
 [Check out model here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)
 
