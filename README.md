@@ -13,6 +13,6 @@ Parameters that can be played around with:
 R<sub>0</sub> - the average number of people that an infected person passes on the disease to.
 
 __Further Reading__
-1. [Benjamin Moll's super analysis of lockdowns in SIR Models](https://benjaminmoll.com/wp-content/uploads/2020/05/SIR_notes.pdf)
+1. [Benjamin Moll's superb analysis of lockdowns in SIR Models](https://benjaminmoll.com/wp-content/uploads/2020/05/SIR_notes.pdf)
 2. ["What is Heard Immunity?"](https://academic.oup.com/cid/article/52/7/911/299077)
 3. [Leah-Edelstein Keshet's _Mathematical Models in Biology_](https://epubs.siam.org/doi/book/10.1137/1.9780898719147)
