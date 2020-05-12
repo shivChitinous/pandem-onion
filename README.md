@@ -1,9 +1,9 @@
 # pandem-onion 
 #### [<sup>GitHub</sup>](https://github.com/shivChitinous/pandem-onion) <sup>|</sup> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
 
-__Visualising SIRS Model of Epidemic Spread__
+## Visualising SIRS Model of Epidemic Spread
 
-_[Check out model here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)_
+__[Check out model here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)__
 
 I simulate the SIRS model of epidemic spread to try and explain the trajectories of different variables as the disease progresses in a population.
 
