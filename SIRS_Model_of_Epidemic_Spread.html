@@ -19,8 +19,8 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 150%;
-  -webkit-text-size-adjust: 150%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -13104,9 +13104,17 @@ div#notebook {
 
 
 
+  <div class="cell text_cell">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://shivchitinous.github.io/pandem-onion/"><em>Home</em></a> | <a href="https://github.com/shivChitinous/pandem-onion"><em>Git</em></a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master"><em>Binder</em></a>
+<p><a href="https://shivchitinous.github.io/pandem-onion/"><em>Home</em></a> | <a href="https://github.com/shivChitinous/pandem-onion"><em>Git</em></a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master"><em>Binder</em></a></p>
 
 </div>
 </div>
@@ -13127,8 +13135,7 @@ div#notebook {
 </div>
 </div>
 </div>
-        
-        
+
   
 
   <div class="nbinteract-hide_in
@@ -13153,10 +13160,12 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h2><p>We define $R_{0}$ which is the average number of people a single infected individual passes on the pathogen to. This is the parameter to keep in mind!</p>
-<p>Next, we define the cumulative removal rate $\nu$, which is the sum of the recovery and death rate of the disease. Finally, we define $\gamma$ which is the rate of loss of immunity to the disease once removed.</p>
-<p><em>In this model, <strong>removal</strong> means that an individal has either succumbed to or recovered from the disease.</em></p>
+<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h2><p>Let's start with a population of $N$ people.</p>
+<p>We define $R_{0}$ which is the average number of people a single infected individual passes on the pathogen to. This is the parameter to keep in mind!</p>
+<p>Next, we define the cumulative removal rate $\nu$, which is the sum of the recovery and death rate of the disease. Finally, we define $\gamma$ which is the rate of loss of immunity to the disease once removed. <br>
+<em>In this model, <strong>removal</strong> means that an individal has either succumbed to or recovered from the disease.</em></p>
 <p>$\beta = R_{0}N/\nu$ is a derived parameter that is proportional to probablity of contact between susceptible and infected individuals in the population.</p>
+<p><strong>Parameters:</strong> $R_{0}$, $\nu$, $\gamma$</p>
 <p>The total time period is $T$ in days and $dt$ is the interval in which the count is updated.</p>
 
 </div>
@@ -13210,7 +13219,8 @@ div#notebook {
 <p>$\dot{S} = -\beta I S + \gamma R$</p>
 <p>$\dot{I} = \beta I S - \nu I$</p>
 <p>$\dot{R} = \nu I - \gamma R$</p>
-<p>A trivial conservation law $N = S + I + R$ holds.</p>
+<p>where $S$ is the number of susceptible people, $I$ is the number of infected people and $R$ is the number of removed people in the population.<br>
+A trivial conservation law $N = S + I + R$ holds.</p>
 <p><strong>SIR Model</strong> is the special case when $\gamma = 0$.</p>
 <p><em>Note:</em> For <strong>COVID-19</strong> initial results indicate $\gamma$ to be close to 0. We make this assumption in our model.</p>
 
@@ -13339,12 +13349,12 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
+<ol>
 <li><p>The first obervable - <strong>Number of Infected Persons</strong>, is a useful way to see the maximum load on the healthcare system. The flatter the curve, the lower the maximum load during an epidemic. If the curve is flattened and elongated, we should expect minimum deaths due to the disease. In the news cycle, this observable is often called <strong><em>Number of Active Cases</em></strong>.</p>
 <p>If this observable peaks in an <strong>uncontrolled</strong> system, the population has acquired herd immunity. This is because after a certain number of people have fallen sick and recovered, there are fewer susceptible people left to infect.</p>
 <p>Note that <strong>the area under this curve is NOT equal to the cumulative number of cases</strong> since the epidemic began. This is because once someone falls sick, they take a certain number of days to recover and hence, if we add up the number of infected people everyday, we will end up double counting many patients.</p>
 </li>
-</ul>
+</ol>
 
 </div>
 </div>
@@ -13401,12 +13411,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The trajectory of the rates of infection and removal add up to give us the net rate of change in $I$.</p>
-<ul>
+<ol>
 <li><p><strong>Daily New Cases</strong> tell us if any interventions have been useful. This is the observable to watch when it comes to policy-making. Effective policy should aim to flatten this curve.</p>
 <p>The peak in number of infected cases is achieved when $dI/dt = 0$. Notably, this is <strong>NOT</strong> the same as saying that the number of daily new cases has gone to 0. Therefore, once herd immunity is acquired, cases will <em>continue</em> to grow. This is known as 'overshoot'. This will be clearer when we look at the next observable.</p>
 <p>The endgame is pushing this curve to 0.</p>
 </li>
-</ul>
+</ol>
 
 </div>
 </div>
@@ -13499,18 +13509,19 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
+<ol>
 <li><p>The third main observable: <strong>cumulative infections over time</strong>. This is found by integrating over daily new cases, i.e. by calculating the area under the <em>daily-new-cases</em> curve. Plotting on a log scale tells us which phase of growth the system is in.</p>
 <p>Note here that the threshold number of cases required for acquiring herd immunity is lower than the total cumulative number of cases as $t \rightarrow \infty$. This is exactly what we mean by "overshoot"!</p>
 </li>
-</ul>
+</ol>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Phase-Space-Analysis-for-the-High-and-Mighty">Phase Space Analysis for the High and Mighty<a class="anchor-link" href="#Phase-Space-Analysis-for-the-High-and-Mighty">&#182;</a></h2>
+<h2 id="Phase-Space-Analysis">Phase Space Analysis<a class="anchor-link" href="#Phase-Space-Analysis">&#182;</a></h2><p>Skip over to the section on $R_{0}$ if a <em>'phase-space'</em> sounds unfamiliar.</p>
+
 </div>
 </div>
 </div>
@@ -13592,7 +13603,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For an <strong>SIR Model</strong> as shown above, the system has only one stable state at $I = 0$. This is good news! If reinfection is negligible, the disease WILL disappear.</p>
 <p>But this is not the case if reinfection is possible. In <strong>SIRS models</strong> $(\gamma &gt;&gt; 0)$ a second stable point given by the intersection of the two null clines appears. This implies that the disease could establish itself in the population, i.e. at any given point in time some fraction of people will be sick.</p>
-<h4 id="Herd-Immunity-in-SIR-Models:">Herd Immunity in SIR Models:<a class="anchor-link" href="#Herd-Immunity-in-SIR-Models:">&#182;</a></h4><p>To the left of the I-Null Cline, $I$ is always decreasing. This gives us a useful way to picture the idea of herd immunity. If we can bring the value of $S$ down to where the I-Null Cline intersects with the X-axis then $I$, no matter how high it is at that instant, will decline to 0.</p>
+<h3 id="Herd-Immunity-in-SIR-Models:">Herd Immunity in SIR Models:<a class="anchor-link" href="#Herd-Immunity-in-SIR-Models:">&#182;</a></h3><p>To the left of the I-Null Cline, $I$ is always decreasing. This gives us a useful way to picture the idea of herd immunity. If we can bring the value of $S$ down to where the I-Null Cline intersects with the X-axis then $I$, no matter how high it is at that instant, will decline to 0.</p>
 <p>Now we have a value of $S$ to aim for. Let's call this $S^*$. This means $I^* = N-S^*$ number of people have to fall sick in total for the population to acquire "herd immunity".</p>
 <p>A quick derivation shows that the I-Null Cline intersects the X-axis when $S = \nu/\beta$. Therefore $S^* = \nu/\beta$ and $I^* = N - \nu/\beta$.</p>
 <p>As a fraction of the population $\dfrac{I^*}{N} = 1 - \dfrac{1}{R_0}$.
