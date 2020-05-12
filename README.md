@@ -1,10 +1,7 @@
 # pandem-onion
 
 
-[![Generic badge](https://img.shields.io/badge/View-GitHub-red.svg)](https://github.com/shivChitinous/pandem-onion)
-
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
+[![Generic badge](https://img.shields.io/badge/View-GitHub-red.svg)](https://github.com/shivChitinous/pandem-onion)[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
 
 __Visualising SIRS Model of Epidemic Spread__
 
