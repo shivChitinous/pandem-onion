@@ -1,8 +1,7 @@
 # pandem-onion
-<pre>
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
                                      [:octocat:](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
-</pre>
 
 __Visualising SIRS Model of Epidemic Spread__
 
