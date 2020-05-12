@@ -4,6 +4,9 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master)
 
+{: style="text-align: right" }
+This text is on the right
+
 __Visualising SIRS Model of Epidemic Spread__
 
 [Check out model here!](https://shivchitinous.github.io/pandem-onion/SIRS_Model_of_Epidemic_Spread.html)
