@@ -13114,7 +13114,7 @@ div#notebook {
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://shivchitinous.github.io/pandem-onion/">Home</a> | <a href="https://github.com/shivChitinous/pandem-onion">GitHub</a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master">Binder</a></p>
+<p><a href="https://shivchitinous.github.io/pandem-onion/"><em>Home</em></a> | <a href="https://github.com/shivChitinous/pandem-onion"><em>GitHub</em></a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master"><em>Binder</em></a></p>
 <p><code>This is meant for educational purposes only. No policy decisions should be taken based on this model. All values are purely representative.</code></p>
 
 </div>
@@ -13122,9 +13122,8 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="A-Model-of-Epidemic-Spread">A Model of Epidemic Spread<a class="anchor-link" href="#A-Model-of-Epidemic-Spread">&#182;</a></h1><p>Through this model, we will try to understand the trajectory of an epidemic in time. Along the way we will also clarify some misconceptions about common observables that tend to be discussed in the news cycle.</p>
-<p>Here, an observable is a quantity we can easily measure during an epidemic by means of extensive testing.</p>
-<p><strong>For a non-mathematical overview feel free to skip straight to the figures and their descriptions!</strong></p>
+<h1 id="A-Model-of-Epidemic-Spread">A Model of Epidemic Spread<a class="anchor-link" href="#A-Model-of-Epidemic-Spread">&#182;</a></h1><p>Through this model, we will try to understand the trajectory of an epidemic in time. Along the way we will also clarify some misconceptions about common observables that tend to be discussed in the news cycle. Here, an observable is a quantity we can easily measure during an epidemic by means of extensive testing.</p>
+<p><em>For a non-mathematical overview feel free to skip straight to the figures and their descriptions!</em></p>
 
 </div>
 </div>
@@ -13160,7 +13159,7 @@ div#notebook {
 <p>$\beta = R_{0}N/\nu$ is a derived parameter that is proportional to probablity of contact between susceptible and infected individuals in the population.</p>
 <p><code>Parameters:</code> $R_{0}$, $\nu$, $\gamma$</p>
 <p>The total time period is $T$ in days and $dt$ is the interval in which the count is updated.</p>
-<p>Note that $R_0$ is different from  $R_t$ — <strong>Effective Reproduction Number</strong> — which is the average number of people a single infected individual passes on the disease to at any given instant during the epidemic.</p>
+<p>Note that $R_0$ is different from  $R_t$ — <strong>Effective Reproduction Number</strong> — which is the average number of people a single infected individual passes on the disease to at any given instant during the epidemic. <br></p>
 $$R_t = \dfrac{SR_0}{N}$$
 </div>
 </div>
@@ -13209,8 +13208,11 @@ $$R_t = \dfrac{SR_0}{N}$$
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SIRS-Model">SIRS Model<a class="anchor-link" href="#SIRS-Model">&#182;</a></h2><p>The SIRS Model is governed by the following equations:</p>
-$$\dot{S} = -\beta I S + \gamma R$$$$\dot{I} = \beta I S - \nu I$$$$\dot{R} = \nu I - \gamma R$$<p>where $S$ is the number of susceptible people, $I$ is the number of infected people and $R$ is the number of removed people in the population.<br>
+<h2 id="SIRS-Model">SIRS Model<a class="anchor-link" href="#SIRS-Model">&#182;</a></h2><p>The SIRS Model is governed by the following equations: <br></p>
+$$\dot{S} = -\beta I S + \gamma R$$<p><br>
+$$\dot{I} = \beta I S - \nu I$$ <br>
+$$\dot{R} = \nu I - \gamma R$$</p>
+<p>where $S$ is the number of susceptible people, $I$ is the number of infected people and $R$ is the number of removed people in the population.<br>
 A trivial conservation law $N = S + I + R$ holds.</p>
 <p><strong>SIR Model</strong> is the special case when $\gamma = 0$.</p>
 <p><em>Note:</em> For <strong>COVID-19</strong> initial results indicate $\gamma$ to be close to 0. We make this assumption in our model.</p>
@@ -13585,12 +13587,11 @@ A trivial conservation law $N = S + I + R$ holds.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For an <strong>SIR Model</strong> as shown above, the system has only one stable state at $I = 0$. This is good news! If reinfection is negligible, the disease WILL disappear.</p>
 <p>But this is not the case if reinfection is possible. In <strong>SIRS models</strong> $(\gamma &gt;&gt; 0)$ a second stable point given by the intersection of the two null clines appears. This implies that the disease could establish itself in the population, i.e. at any given point in time some fraction of people will be sick.</p>
-<h3 id="Herd-Immunity-in-SIR-Models">Herd Immunity in SIR Models<a class="anchor-link" href="#Herd-Immunity-in-SIR-Models">&#182;</a></h3><p>To the left of the I-Null Cline, $I$ is always decreasing. This gives us a useful way to picture the idea of herd immunity. If we can bring the value of $S$ down to where the I-Null Cline intersects with the X-axis then $I$, no matter how high it is at that instant, will decline to 0.</p>
-<p>Now we have a value of $S$ to aim for. Let's call this $S^*$. This means $I^* = N-S^*$ number of people have to fall sick in total for the population to acquire "herd immunity".</p>
-<p>A quick derivation shows that the I-Null Cline intersects the X-axis when $S = \nu/\beta$. Therefore $S^* = \nu/\beta$ and $I^* = N - \nu/\beta$.</p>
-<p>As a fraction of the population $$\dfrac{I^*}{N} = 1 - \dfrac{1}{R_0}$$</p>
-<p>This value is often called the "Herd Immunity Threshold" — the total fraction of the population needed to fall sick for acquiring herd immunity.</p>
-<p>As shown before, this threshold can be measured by finding out the number of cumulative infections when the $I$ curve peaks.</p>
+<h3 id="Herd-Immunity-in-SIR-Models">Herd Immunity in SIR Models<a class="anchor-link" href="#Herd-Immunity-in-SIR-Models">&#182;</a></h3><p>To the left of the I-Null Cline, $I$ is always decreasing. This gives us a useful way to picture the idea of herd immunity. If we can bring the value of $S$ down to where the I-Null Cline intersects with the X-axis then $I$, no matter how high it is at that instant, will decline to 0. Now we have a value of $S$ to aim for. Let's call this $S^*$. This means $I^* = N-S^*$ number of people have to fall sick in total for the population to acquire "herd immunity".</p>
+<p>A quick derivation shows that the I-Null Cline intersects the X-axis when $S = \nu/\beta$. Therefore $S^* = \nu/\beta$ and $I^* = N - \nu/\beta$. <br>
+As a fraction of the population
+$$\dfrac{I^*}{N} = 1 - \dfrac{1}{R_0}$$</p>
+<p>This value is often called the "Herd Immunity Threshold" — the total fraction of the population needed to fall sick for acquiring herd immunity. As shown before, this threshold can be measured by finding out the number of cumulative infections when the $I$ curve peaks.</p>
 
 </div>
 </div>
@@ -13712,7 +13713,7 @@ A trivial conservation law $N = S + I + R$ holds.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you update the count at shorter and shorter intervals (say 10 times a day), the measured Herd-Immunity Threshold gets closer and closer to the theoretical value $1-1/R_0$.</p>
-<p><strong>"Flattening the curve" implies that we reduce the total number of people who end up getting the disease, we reduce the load on the healthcare system AND we reduce the threshold required for us to attain herd immunity.</strong></p>
+<p><strong><em>Flattening the curve</em> implies that we reduce the total number of people who end up getting the disease, we reduce the load on the healthcare system AND we reduce the threshold required for us to attain herd immunity.</strong></p>
 
 </div>
 </div>
