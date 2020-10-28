@@ -13104,12 +13104,18 @@ div#notebook {
 
 
 
+  <div class="cell text_cell">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
 
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://shivchitinous.github.io/pandem-onion/"><em>Home</em></a> | <a href="https://github.com/shivChitinous/pandem-onion"><em>GitHub</em></a> | <a href="https://mybinder.org/v2/gh/shivChitinous/pandem-onion/master"><em>Binder</em></a></p>
-<p><code>This is meant for educational purposes only (relevant to the COVID-19 pandemic). No policy decisions should be taken based on this model. All values are purely representative.</code></p>
+<p><code>This is meant for educational purposes (relevant to the COVID-19 pandemic) only. No policy decisions should be taken based on this model. All values are purely representative.</code></p>
 
 </div>
 </div>
@@ -13149,11 +13155,11 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h2><p>Let's start with a population of $N$ people.</p>
 <p>We define $R_{0}$ — <strong>Basic Reproduction Number</strong> — which is the average number of people a single infected individual passes on the pathogen to when the epidemic has just begun. This is the parameter to keep in mind!</p>
-<p>Next, we define the cumulative removal rate $\nu$, which is the sum of the recovery and death rate of the disease. Finally, we define $\gamma$ which is the rate of loss of immunity to the disease once removed. In this model, <strong>removal</strong> means that an individal has either succumbed to or recovered from the disease.</p>
+<p>Next, we define the cumulative removal rate $\nu$, which is the sum of the recovery and death rate of the disease. Finally, we define $\gamma$ which is the rate of loss of immunity to the disease once removed. In this model, <em>removal</em> means that an individal has either succumbed to or recovered from the disease.</p>
 <p>$\beta = R_{0}N/\nu$ is a derived parameter that is proportional to probablity of contact between susceptible and infected individuals in the population.</p>
 <p><code>Parameters:</code> $R_{0}$, $\nu$, $\gamma$</p>
 <p>The total time period is $T$ in days and $dt$ is the interval in which the count is updated.</p>
-<p>Note that $R_0$ is different from  $R_t$ — <strong>Effective Reproduction Number</strong> — which is the average number of people a single infected individual passes on the disease to at any given instant during the epidemic. <br></p>
+<p>Note that $R_0$ is different from  $R_t$ — <strong>Effective Reproduction Number</strong> — which is the average number of people a single infected individual passes on the disease to at any given instant during the epidemic and is given by <br></p>
 $$R_t = \dfrac{SR_0}{N}$$
 </div>
 </div>
