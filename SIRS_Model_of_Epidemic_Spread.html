@@ -13208,8 +13208,8 @@ $$R_t = \dfrac{SR_0}{N}$$
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SIRS-Model">SIRS Model<a class="anchor-link" href="#SIRS-Model">&#182;</a></h2><p>The SIRS Model is governed by the following equations: <br></p>
-$$\dot{S} = -\beta I S + \gamma R$$<p><br>
+<h2 id="SIRS-Model">SIRS Model<a class="anchor-link" href="#SIRS-Model">&#182;</a></h2><p>The SIRS Model is governed by the following equations: <br>
+$$\dot{S} = -\beta I S + \gamma R$$ <br>
 $$\dot{I} = \beta I S - \nu I$$ <br>
 $$\dot{R} = \nu I - \gamma R$$</p>
 <p>where $S$ is the number of susceptible people, $I$ is the number of infected people and $R$ is the number of removed people in the population.<br>
@@ -13589,7 +13589,7 @@ A trivial conservation law $N = S + I + R$ holds.</p>
 <p>But this is not the case if reinfection is possible. In <strong>SIRS models</strong> $(\gamma &gt;&gt; 0)$ a second stable point given by the intersection of the two null clines appears. This implies that the disease could establish itself in the population, i.e. at any given point in time some fraction of people will be sick.</p>
 <h3 id="Herd-Immunity-in-SIR-Models">Herd Immunity in SIR Models<a class="anchor-link" href="#Herd-Immunity-in-SIR-Models">&#182;</a></h3><p>To the left of the I-Null Cline, $I$ is always decreasing. This gives us a useful way to picture the idea of herd immunity. If we can bring the value of $S$ down to where the I-Null Cline intersects with the X-axis then $I$, no matter how high it is at that instant, will decline to 0. Now we have a value of $S$ to aim for. Let's call this $S^*$. This means $I^* = N-S^*$ number of people have to fall sick in total for the population to acquire "herd immunity".</p>
 <p>A quick derivation shows that the I-Null Cline intersects the X-axis when $S = \nu/\beta$. Therefore $S^* = \nu/\beta$ and $I^* = N - \nu/\beta$. <br>
-As a fraction of the population
+As a fraction of the population,
 $$\dfrac{I^*}{N} = 1 - \dfrac{1}{R_0}$$</p>
 <p>This value is often called the "Herd Immunity Threshold" — the total fraction of the population needed to fall sick for acquiring herd immunity. As shown before, this threshold can be measured by finding out the number of cumulative infections when the $I$ curve peaks.</p>
 
