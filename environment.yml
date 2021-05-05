@@ -1,0 +1,6 @@
+name: environment
+dependencies:
+  - scipy
+  - numpy
+  - seaborn
+  - matplotlib
